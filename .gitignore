@@ -1,0 +1,11 @@
+# Terraform — état et fichiers générés : NE JAMAIS committer
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Valeurs personnelles (resource group, etc.) — local uniquement
+*.tfvars
+!*.tfvars.example
+
+# (On VERSIONNE en revanche le verrou des providers : .terraform.lock.hcl)
